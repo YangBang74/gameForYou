@@ -46,10 +46,10 @@ function handleCellClick(event) {
 
     // Check for a winner or a draw
     if (checkWin()) {
-        alert(`${currentPlayer} победитель!`);
+        alert(`${!currentPlayer} снимает одежду!`);
         gameActive = false; // Stop the game
     } else if (gameBoard.every(cell => cell !== '')) {
-        alert("Ничья!");
+        alert("УРА! Обе снимаете одежду");
         gameActive = false; // Stop the game
     } else {
         // Switch players
